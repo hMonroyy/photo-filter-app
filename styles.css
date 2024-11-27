@@ -1,0 +1,119 @@
+body {
+    margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1400px;
+    flex: 1;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(3, 160, 221);
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+/* BUTTONS */
+
+#canvas-container {
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.canvas-buttons {
+    width: 100%;
+    padding: 20px 0;
+    text-align: left;
+    background-color: #2d2f3b;
+}
+
+.btn {
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 30px;
+    margin-left: 30px;
+    border: 0 solid transparent;
+    width: 60px;
+    height: 60px;
+    color: #2d2f3b;
+    cursor: pointer;
+}
+
+.bg-orange {
+    background-color: orange;
+}
+.bg-blue {
+    background-color: lightskyblue;
+}
+.bg-grey {
+    background-color: lightslategrey;
+}
+.bg-red {
+    background-color: lightcoral;
+}
+.bg-green {
+    background-color: lightgreen;
+}
+
+.bg-brown {
+    background-color: rgb(143, 72, 24);
+}
+
+.bg-purple {
+    background-color: #bc81f6;
+}
+
+.bg-yellow {
+    background-color: lightyellow;
+}
+
+/* CANVAS */
+
+canvas {
+    background-color: green;
+    width: 100%;
+}
+
+.canvas-buttons {
+    display: flex;
+}
+
+#slider-range, #slider-sepia {
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+#canvas-images {
+    width: 100%;
+    padding: 20px 0;
+    margin: 0 auto;
+    margin-top: -5px;
+    text-align: left;
+    background-color: #2d2f3b;
+    display: flex;
+    overflow-x: auto;
+}
+
+#canvas-images img {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    height: 100px;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    background-color: #2d2f3b;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}

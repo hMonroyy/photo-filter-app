@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo filter APP - Canvas</title>
+    <script type="module" src="main.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/635b528f3e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header></header>
+    <main>
+        <h1>Photo filter App</h1>
+        <div id="canvas-container">
+            <div id="canvas-buttons" class="canvas-buttons">
+                <button type="button" id="btn-lightDark" class="btn bg-orange"><i class="fa-solid fa-lightbulb"></i></button>
+                <button type="button" id="btn-whiteBlack" class="btn bg-blue"><i class="fa-solid fa-circle-half-stroke"></i></button>
+                <button type="button" id="btn-negative" class="btn bg-grey"><i class="fa-solid fa-circle-minus"></i></button>
+                <button type="button" id="btn-mirror" class="btn bg-orange"><i class="fa-solid fa-clone"></i></button>
+                <button type="button" id="btn-sepia" class="btn bg-brown"><i class="fa-solid fa-coffee"></i></button>
+                <button type="button" id="btn-saturation" class="btn bg-purple"><i class="fa-solid fa-sun"></i></button>
+                <button type="button" id="btn-clean-canvas" class="btn bg-red"><i class="fa-solid fa-trash"></i></button>
+                <button type="button" id="btn-download" class="btn bg-green"><i class="fa-solid fa-download"></i></button>
+                <button type="button" id="btn-upload" class="btn bg-yellow"><i class="fa-solid fa-upload"></i></button>
+                <input type="range" id="slider-range" min="-100" max="100" step="1" value="0" style="display: none;">
+            </div>
+            <div style="display: none;">
+                <input type="file" id="file-input" accept="image/*">
+                
+            </div>                                     
+            <div id="canvas-display">
+                <canvas id="canvas"></canvas>
+            </div>
+            <div id="canvas-images">
+                <img id="cat" src="img/cat.jpg" alt="cat">
+                <img id="grindelwald" src="img/grindelwald.jpg" alt="grindelwald">
+                <img id="haikyuu" src="img/haikyuu.webp" alt="haikyuu">
+                <img id="landscape" src="img/landscape.jpg" alt="landscape">
+                <img id="mcqueen" src="img/mcqueen.jpeg" alt="mcqueen">
+                <img id="chow-chow" src="img/chow-chow.jpeg" alt="chow-chow">
+                <img id="gato-gym" src="img/gato-gym.jpeg" alt="gato-gym">
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; Copyright 2024 Héctor Monroy
+    </footer>
+
+</body>
+</html>
